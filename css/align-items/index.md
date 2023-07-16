@@ -1,6 +1,15 @@
 ---
 title: "`align-items`"
 description: "Работает перпендикулярно `justify-content`, выравнивает флекс-элементы по дополнительной оси. "
+baseline:
+  - group: flexbox
+    features:
+      - css.properties.align-items.flex_context
+      - css.properties.align-items.flex_context.baseline
+  - group: grid
+    features:
+      - css.properties.align-items.grid_context
+      - css.properties.align-items.grid_context.start_end
 authors:
   - solarrust
 contributors:
@@ -34,7 +43,7 @@ tags:
 }
 ```
 
-## Как это понять
+## Как понять
 
 Работа этого свойства похожа на работу [`vertical-align`](/css/vertical-align/) для строчно-блочных элементов.
 
@@ -42,7 +51,7 @@ tags:
 
 ## Как пишется
 
-### Возможные значения:
+### Возможные значения
 
 - `stretch` (значение по умолчанию) — элементы растягиваются вдоль поперечной оси так, чтобы заполнить всего родителя.
 - `flex-start` или `start` — элементы выстраиваются у начала поперечной оси. Разница между ними лишь в том, что второе значение «уважает» направление чтения выбранного языка.

@@ -1,13 +1,20 @@
 ---
 title: "`:placeholder-shown`"
+description: "Стилизуем поля, в которых ничего не введено, виден плейсхолдер."
 authors:
   - ezhkov
+contributors:
+  - skorobaeus
 editors:
   - tachisis
 keywords:
   - форма
   - плейсхолдер
   - валидация
+related:
+  - html/input
+  - css/placeholder
+  - css/empty
 tags:
   - doka
 ---
@@ -32,7 +39,7 @@ input:placeholder-shown {
 }
 ```
 
-## Как это понять
+## Как понять
 
 Если полю ввода задан атрибут `placeholder` с каким-то значением, то внутри поля будет показана текстовая подсказка. Она пропадёт, если пользователь введёт хотя бы один символ. По сути псевдокласс `:placeholder-shown` будет применять стили к пустым полям ввода.
 

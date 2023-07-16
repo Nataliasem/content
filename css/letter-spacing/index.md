@@ -1,12 +1,15 @@
 ---
 title: "`letter-spacing`"
+description: "Управляем расстоянием между буквами текста."
 authors:
   - doka-dog
 contributors:
   - solarrust
   - skorobaeus
-keywords:
-  - межбуквенное расстояние
+related:
+  - css/line-height
+  - css/font-face
+  - css/white-space
 tags:
   - doka
 ---
@@ -45,7 +48,7 @@ p {
 }
 ```
 
-## Как это понять
+## Как понять
 
 С помощью `letter-spacing` можно сжать или растянуть текст на веб-странице. При этом расстояние между буквами и другими символами уменьшается или увеличивается, а сами символы остаются прежнего размера.
 

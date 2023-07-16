@@ -1,10 +1,16 @@
 ---
 title: "`Set`"
-description: "Коллекция для хранения уникальных значений"
+description: "Коллекция для хранения уникальных значений."
 authors:
   - nlopin
+related:
+  - js/arrays
+  - js/object
+  - tools/oop
 tags:
   - doka
+contributors:
+  - rakleed
 ---
 
 ## Кратко
@@ -15,11 +21,11 @@ tags:
 
 Основные методы для работы с коллекцией:
 
-- [`add`](/js/set-add/) — добавить элемент.
-- [`delete`](/js/set-delete/) — удалить элемент.
-- [`has`](/js/set-has/) — проверить, есть ли элемент в коллекции.
-- [`clear`](/js/set-clear/) — очистить коллекцию.
-- [`forEach`](/js/set-foreach/) — выполнить функцию для каждого элемента в коллекции, аналогично [одноимённому методу массива](/js/array-foreach/).
+- [`add()`](/js/set-add/) — добавить элемент.
+- [`delete()`](/js/set-delete/) — удалить элемент.
+- [`has()`](/js/set-has/) — проверить, есть ли элемент в коллекции.
+- [`clear()`](/js/set-clear/) — очистить коллекцию.
+- [`forEach()`](/js/set-foreach/) — выполнить функцию для каждого элемента в коллекции, аналогично [одноимённому методу массива](/js/array-foreach/).
 
 Содержит свойство [`size`](/js/set-size/) для получения количества элементов в коллекции.
 
@@ -54,7 +60,7 @@ console.log(uniqueIds.size)
 
 Добавляйте элемент в массив и множество, чтобы понять разницу:
 
-<iframe title="Отличие массива от Set" src="demos/index.html" height="400"></iframe>
+<iframe title="Отличие массива от Set" src="demos/set-array-difference/" height="230"></iframe>
 
 ### Создание коллекции
 
@@ -109,7 +115,7 @@ console.log(filled.has('3'))
 // true
 
 console.log(filled.has('My name'))
-//false
+// false
 ```
 
 Полностью очистить `Set` можно методом [`clear()`](/js/set-clear/). Технически это то же самое, что и создать новый `Set`:
@@ -130,7 +136,7 @@ console.log(filled.size)
 
 Обход можно организовать двумя способами:
 
-1️⃣ Использовать метод [`forEach()`](/js/set-foreach/), который работает аналогично одноимённому методу массива:
+1️⃣ Использовать метод [`forEach()`](/js/set-foreach/), который работает аналогично одноимённому методу [массива](/js/arrays/):
 
 ```js
 const filled = new Set([1, 2, 3, 3, 3, 'hello'])

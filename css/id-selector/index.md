@@ -1,5 +1,6 @@
 ---
 title: "Селектор по идентификатору"
+description: "Выбираем для стилизации элемент с уникальным атрибутом `id`."
 authors:
   - solarrust
 keywords:
@@ -7,6 +8,10 @@ keywords:
   - inherit
   - unset
   - revert
+related:
+  - html/global-attrs
+  - css/specificity
+  - css/tag-selector
 tags:
   - doka
 ---
@@ -43,7 +48,7 @@ tags:
 }
 ```
 
-## Как это понять
+## Как понять
 
 Если нужно применить стили только к одному конкретному элементу, то ему задают идентификатор при помощи атрибута [`id`](/html/global-attrs/) и используют его в качестве селектора в CSS.
 

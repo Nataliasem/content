@@ -1,5 +1,6 @@
 ---
 title: "`:required`"
+description: "Стилизуем поля формы, обязательные для заполнения."
 authors:
   - ezhkov
 editors:
@@ -11,6 +12,10 @@ keywords:
   - форма
   - form
   - обязательное
+related:
+  - html/select
+  - html/textarea
+  - css/attribute-selector
 tags:
   - doka
 ---
@@ -41,13 +46,13 @@ tags:
 input:required {
   border-width: 2px;
   border-color: #FF8630;
-  background-color: rgba(255, 134, 48, 0.1);
+  background-color: rgb(255 134 48 / 0.1);
 }
 ```
 
 <iframe title="Подсветка обязательного поля" src="demos/required-input/" height="300"></iframe>
 
-## Как это понять
+## Как понять
 
 Если нужно как-то выделить обязательные для заполнения элементы форм, можно использовать в селекторе псевдокласс `:required`.
 

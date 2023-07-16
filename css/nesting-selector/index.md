@@ -1,5 +1,6 @@
 ---
 title: "Селектор потомка"
+description: "Пишем CSS-селектор так, чтобы стилизовать вложенные элементы."
 authors:
   - solarrust
 contributors:
@@ -11,6 +12,10 @@ keywords:
   - селектор вложенности
   - селектор
   - селектор потомка
+related:
+  - css/specificity
+  - css/combined-selectors
+  - css/class-selector
 tags:
   - doka
 ---
@@ -59,7 +64,7 @@ tags:
 
 <iframe title="Селектор потомка" src="demos/nested-selector/" height="420"></iframe>
 
-## Как это понять
+## Как понять
 
 Часто пробел не имеет особого значения. Но не в CSS. При написании стилей пробел между селекторами является _указателем взаимоотношений_ между элементами.
 

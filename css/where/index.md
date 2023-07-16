@@ -3,6 +3,12 @@ title: "`:where()`"
 description: "Псевдокласс для упрощения перечисления нескольких селекторов."
 authors:
   - kotosha-real
+contributors:
+  - skorobaeus
+related:
+  - css/is
+  - css/all
+  - css/selector-list
 tags:
   - doka
 ---
@@ -51,11 +57,11 @@ header:where(.content-header, .section-header) {
 }
 ```
 
-## Как это понять
+## Как понять
 
 Можно объяснить работу `:where()` как «возьми все селекторы из списка, но не добавляй им веса». Это полезно, если вы хотите применить стили к нескольким селекторам и при этом обойтись без перечисления, вдобавок не переживая о повышенной специфичности итогового селектора. Пример ниже демонстрирует возможность легко переопределить свойства, заданные с помощью `:where()`:
 
-<iframe title="Объяснение работы :where()" src="demos/basic" height="500"></iframe>
+<iframe title="Объяснение работы :where()" src="demos/basic" height="600"></iframe>
 
 ## Разница специфичности между `:where()` и `:is()`
 
@@ -83,7 +89,7 @@ div:where(.meow) {
 }
 ```
 
-<iframe title="Разница в специфичности :where() и :is()" src="demos/specificity-battle" height="700"></iframe>
+<iframe title="Разница в специфичности :where() и :is()" src="demos/specificity-battle" height="800"></iframe>
 
 ## Прощающие селекторы
 

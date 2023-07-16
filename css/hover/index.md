@@ -1,5 +1,6 @@
 ---
 title: "`:hover`"
+description: "Оживляем элементы, реагируем на наведение курсора."
 cover:
   author: kirakusto
   desktop: 'images/covers/desktop.svg'
@@ -13,10 +14,11 @@ contributors:
 editors:
   - tachisis
 keywords:
-  - :hover
-  - LVHA
-  - псевдокласс
   - ховер
+related:
+  - css/transition
+  - css/visited
+  - css/active
 tags:
   - doka
 ---
@@ -29,6 +31,7 @@ tags:
 
 <video controls width="700">
   <source src="video/mouse-hover.mp4" type="video/mp4">
+  <source src="video/mouse-hover_safari.mp4" type="video/mp4">
 </video>
 
 ## Пример
@@ -91,7 +94,7 @@ li .link:hover {
 }
 ```
 
-## Как это понять
+## Как понять
 
 Браузер подставляет любому элементу, на который наводится курсор, _пометку_ в виде автоматически создаваемого класса. Мы можем стилизовать этот класс на своё усмотрение, при этом сама логика и механизм отслеживания наведения курсора будут скрыты под капотом движка браузера.
 

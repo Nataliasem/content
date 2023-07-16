@@ -6,7 +6,7 @@ authors:
 related:
   - css/important
   - html/comments
-  - js/how-the-browser-creates-pages
+  - tools/how-the-browser-creates-pages
 tags:
   - doka
 ---
@@ -56,7 +56,7 @@ tags:
 */
 ```
 
-## Как это понять
+## Как понять
 
 У комментария обязательно должны быть начало и конец. Открывать комментарий нужно при помощи `/*`, а закрывать — при помощи зеркальной конструкции `*/`.
 

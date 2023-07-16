@@ -1,11 +1,16 @@
 ---
 title: "`list-style-position`"
+description: "Можно двигать маркеры списка внутрь или наружу строки."
 authors:
   - ezhkov
 contributors:
   - skorobaeus
 keywords:
   - list-style-position
+related:
+  - css/list-style
+  - html/ul
+  - html/li
 tags:
   - doka
 ---
@@ -34,7 +39,7 @@ tags:
 }
 ```
 
-## Как это понять
+## Как понять
 
 Свойство указывает, будет ли маркер являться частью содержимого в элементе списка (`inside`), либо будет находиться вне элемента (`outside`).
 

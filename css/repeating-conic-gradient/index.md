@@ -3,6 +3,10 @@ title: "`repeating-conic-gradient()`"
 description: "Всего одна функция для повторяющегося конического градиента!"
 authors:
   - solarrust
+related:
+  - css/background-image
+  - css/conic-gradient
+  - css/repeating-linear-gradient
 tags:
   - doka
 ---
@@ -31,7 +35,7 @@ div {
 
 ## Как пишется
 
-Функция `repeating-radial-gradient()` принимает те же аргументы, что и [`radial-gradient`](/css/radial-gradient/). Основное отличие заключается в том, что градиент будет повторять себя после границы последнего цвета.
+Функция `repeating-conic-gradient()` принимает те же аргументы, что и [`conic-gradient`](/css/conic-gradient/). Основное отличие заключается в том, что градиент будет повторять себя после границы последнего цвета.
 
 Этот эффект наиболее заметен, когда граница последнего цвета находится в пределах поля градиента.
 

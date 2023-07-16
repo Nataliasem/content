@@ -32,9 +32,12 @@ groups:
       - visited
       - hover
       - active
+      - target
       - child
       - nth-of-type
       - focus
+      - focus-visible
+      - focus-within
       - not
       - checked
       - disabled-enabled
@@ -44,10 +47,13 @@ groups:
       - where
       - in-range-out-of-range
       - required
+      - optional
       - invalid-valid
       - placeholder-shown
+      - default
       - lang
       - root
+      - indeterminate
   - name: 'Псевдоэлементы'
     items:
       - pseudoelements
@@ -58,18 +64,24 @@ groups:
       - first-letter
       - first-line
       - selection
+      - marker
   - name: 'Функции'
     items:
       - attr
       - calc
+      - min
+      - max
       - linear-gradient
+      - repeating-linear-gradient
       - radial-gradient
+      - repeating-radial-gradient
       - conic-gradient
       - repeating-conic-gradient
       - image-set
       - var
       - filter-functions
       - transform-function
+      - url
   - name: 'Директивы'
     items:
       - font-face
@@ -106,15 +118,18 @@ groups:
       - transition-duration
       - transition-property
       - transition-timing-function
+      - will-change
   - name: 'Трансформации'
     items:
       - transform
       - transform-function
       - transform-origin
       - transform-style
+      - transform-box
       - perspective
       - perspective-origin
       - backface-visibility
+      - will-change
   - name: 'Фон'
     items:
       - background
@@ -128,7 +143,9 @@ groups:
       - background-origin
       - background-blend-mode
       - linear-gradient
+      - repeating-linear-gradient
       - radial-gradient
+      - repeating-radial-gradient
       - conic-gradient
       - repeating-conic-gradient
       - image-set
@@ -198,9 +215,12 @@ groups:
       - padding
       - margin
       - box-sizing
+      - min
+      - max
   - name: 'Позиционирование'
     items:
       - position
+      - top-left-right-bottom
       - position-sticky
       - stacking-context
       - z-index
@@ -211,6 +231,7 @@ groups:
       - list-style-image
       - list-style-position
       - list-style-type
+      - marker
   - name: 'Флексбоксы'
     items:
       - flexbox-guide
@@ -243,6 +264,7 @@ groups:
       - align-content
       - align-items
       - align-self
+      - place-content
       - place-items
       - place-self
       - gap
@@ -259,6 +281,9 @@ groups:
       - resize
       - caret-color
       - accent-color
+      - indeterminate
+      - read-only
+      - read-write
   - name: '!important'
     items:
       - important
@@ -267,6 +292,8 @@ groups:
       - opacity
       - visibility
       - clip
+      - clip-path
+      - will-change
   - name: 'Переполнение'
     items:
       - overflow
@@ -277,14 +304,19 @@ groups:
     items:
       - object-fit
       - object-position
+      - aspect-ratio
       - filter
       - filter-functions
   - name: 'Рамки, обводки и тени'
     items:
       - border
+      - border-block
+      - border-inline
+      - border-collapse
       - border-image
       - border-style
       - border-radius
+      - border-spacing
       - border-color
       - border-width
       - outline
@@ -303,6 +335,10 @@ groups:
       - resize
       - scroll-behavior
       - scroll-padding
+      - scrollbar-color
+      - scrollbar-gutter
+      - scrollbar-width
+      - zoom
   - name: 'SVG'
     items:
       - fill
@@ -327,11 +363,15 @@ groups:
       - column-rule-style
       - column-rule-width
       - caption-side
+      - border-collapse
+      - border-spacing
   - name: 'Счётчики'
     items:
+      - css-counters
       - counter-set
       - counter-reset
       - counter-increment
+      - counter-counters
 ---
 
-CSS — язык каскадных стилей, который задаёт визуальное оформления для [HTML](/html/), SVG и других языков разметки.
+CSS — язык каскадных стилей, который задаёт визуальное оформление для [HTML](/html/), SVG и других языков разметки.

@@ -42,6 +42,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      color-scheme: dark;
+    }
+
     body {
       min-height: 100vh;
       padding: 50px;
@@ -132,13 +136,14 @@ body {
 
 Если в демо нужно покрасить элемент, используйте основной цвет раздела, к которому относится статья. Если окрашенных элементов много и нужно некоторые из них выделить визуально — подключите вспомогательный цвет.
 
-|             | Основной цвет | Дополнительный |
-|-------------|---------------|----------------|
-| HTML        | #FF8630       | #2E9AFF        |
-| CSS         | #2E9AFF       | #F498AD        |
-| JS          | #FFD829       | #41E847        |
-| Инструменты | #41E847       | #FF8630        |
-| Рецепты     | #C56FFF       | #41E847        |
+|               | Основной цвет | Дополнительный |
+|---------------|---------------|----------------|
+| HTML          | #FF8630       | #2E9AFF        |
+| CSS           | #2E9AFF       | #F498AD        |
+| JS            | #FFD829       | #41E847        |
+| Веб-платформа | #41E847       | #FF8630        |
+| Рецепты       | #C56FFF       | #41E847        |
+| Доступность   | #10F3AF       | #F498AD        |
 
 В примерах этого гайда мы будем использовать цвет раздела CSS — `#2E9AFF`, но если вы делаете демку для другого раздела, замените его на подходящий.
 
@@ -589,6 +594,10 @@ textarea:focus {
   margin-right: 15px;
 }
 
+.radio:focus + .radio-title::before {
+  border-color: #2E9AFF;
+}
+
 .radio:checked + .radio-title::before {
   background-color: #FFFFFF;
   background: radial-gradient(
@@ -636,6 +645,10 @@ textarea:focus {
   height: 24px;
   border: 1px solid #FFFFFF;
   border-radius: 6px;
+}
+
+.checkbox:focus + .checkbox-title::before {
+  border-color: #2E9AFF;
 }
 
 .checkbox:checked + .checkbox-title::after {

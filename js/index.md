@@ -23,6 +23,7 @@ groups:
       - for-in
       - shallow-or-deep-clone
       - iterator
+      - date
   - name: "Примитивные типы данных"
     items:
       - number
@@ -40,6 +41,7 @@ groups:
       - function-as-datatype
       - set
       - map
+      - collection-weakmap
   - name: "Числа"
     items:
       - number
@@ -57,7 +59,7 @@ groups:
       - index-of
       - includes
       - string-length
-  - name: "Булевый тип"
+  - name: "Булев тип"
     items:
       - boolean
       - logic-operators
@@ -86,8 +88,10 @@ groups:
       - array-reverse
       - includes
       - index-of
+      - last-index-of
       - array-length
       - array-from
+      - array-of
       - array-isarray
   - name: "Объекты"
     items:
@@ -127,6 +131,7 @@ groups:
       - window-history
       - window-location
       - window-navigator
+      - geolocation-api
       - match-media
       - urlsearchparams
       - local-storage
@@ -141,17 +146,16 @@ groups:
       - setinterval
       - clearinterval
       - window-print
-  - name: "О браузере"
-    items:
-      - how-the-browser-creates-pages
-      - coordinates
-      - browsers-storages
+      - window-open
+      - intersection-observer
+
   - name: "Объектная модель документа DOM"
     items:
       - dom
       - element
       - events
       - htmlcollection-and-nodelist
+
   - name: "Объект страницы (`document`)"
     items:
       - element-addeventlistener
@@ -168,6 +172,7 @@ groups:
       - element
       - element-addeventlistener
       - element-removeeventlistener
+      - element-remove-property
       - getelementsbyclassname
       - getelementsbytagname
       - query-selector
@@ -175,8 +180,11 @@ groups:
       - element-getattribute
       - element-focus
       - element-blur
-      - element-scroll-scrollintoview
-      - element-scroll-scrollto
+      - element-get-property-value
+      - element-set-property
+      - element-scrollby
+      - element-scrollintoview
+      - element-scrollto
       - element-classlist
       - element-dataset
       - element-style
@@ -189,22 +197,33 @@ groups:
     items:
       - events
       - event
+      - event-change
+      - event-reset
+      - event-input
+      - event-dblclick
       - element-click
-      - event-load-and-domcontentloaded
+      - event-invalid
+      - event-submit
+      - event-domcontentloaded
+      - event-load
       - event-unload
       - event-beforeunload
-      - element-keydown-keyup
+      - element-keydown
+      - element-keyup
       - element-mouseout
       - element-mouseover
-      - element-scroll-wheel
+      - event-prevent-default
+      - element-scroll
+      - element-wheel
       - element-touch
+
   - name: "Хранение данных в браузере"
     items:
-      - browsers-storages
       - cookie
       - local-storage
       - session-storage
-  - name: "Асинхронный код"
+
+  - name: "Асинхронность"
     items:
       - async-in-js
       - promise
@@ -216,44 +235,17 @@ groups:
       - promise-any
       - promise-race
       - async-await
+
   - name: "Обмен данными с API"
     items:
-      - api
       - fetch
       - async-await
-  - name: "Парадигмы программирования"
-    items:
-      - programming-paradigms
-      - oop
-      - fp
+
   - name: "Веб-приложение"
     items:
-      - web-app-types
-      - web-app-works
-      - web-security
       - language-versions
       - modules
-      - react-and-alternatives
-      - reactivity
-      - architecture-and-design-patterns
-      - technical-debt
-      - code-style
-  - name: "Архитектура приложения"
-    items:
-      - clean-architecture
-      - architecture-data-flow
-      - architecture-mvc
-      - architecture-and-design-patterns
-      - design-patterns-creational
-      - design-patterns-structural
-      - design-patterns-behaviorial
-  - name: "Тестирование"
-    items:
-      - how-to-test-and-why
-      - tdd
-      - how-to-simplify-tests
-      - testing-and-fake-objects
-      - integration-and-system-testing
+
   - name: "Типовые решения"
     items:
       - deal-with-forms

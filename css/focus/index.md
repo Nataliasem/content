@@ -1,5 +1,6 @@
 ---
 title: "`:focus`"
+description: "Меняем внешний вид элемента в фокусе."
 authors:
   - solarrust
 contributors:
@@ -7,9 +8,11 @@ contributors:
 editors:
   - tachisis
 keywords:
-  - :focus
-  - LVHA
-  - псевдокласс
+  - LVFHA
+related:
+  - css/focus-visible
+  - css/focus-within
+  - css/hover
 tags:
   - doka
 ---
@@ -18,14 +21,16 @@ tags:
 
 Сайтом можно пользоваться не только с использованием мышки, но и при помощи клавиатуры. При переключении клавишей <kbd>Tab</kbd> элементу добавляется псевдокласс `:focus`, и мы можем задать для него красивые стили.
 
-<video controls width="700">
+<video controls muted width="700">
   <source src="video/tab-focus.mp4" type="video/mp4">
+  <source src="video/tab-focus_safari.mp4" type="video/mp4">
 </video>
 
 Элементы формы могут получить фокус и при клике мышкой на него. Например, если кликнуть по кнопке или в поле ввода текста, то им будет добавлен псевдокласс `:focus`.
 
-<video controls width="700">
+<video controls muted width="700">
   <source src="video/mouse-focus.mp4" type="video/mp4">
+  <source src="video/mouse-focus_safari.mp4" type="video/mp4">
 </video>
 
 Важно! В браузерах Safari и Firefox на Mac при клике мышкой на кнопку фокус не устанавливается.
@@ -53,7 +58,7 @@ a:focus {
 }
 ```
 
-## Как это понять
+## Как понять
 
 При попадании элемента в фокус браузер подставляет элементу дополнительный автоматический класс, чтобы пометить изменение состояния. Этому классу мы можем задавать любые стили, подходящие по дизайну. При этом логика подставления или удаления этого класса скрыта под капотом движка браузера.
 

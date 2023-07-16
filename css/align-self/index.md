@@ -1,6 +1,15 @@
 ---
 title: "`align-self`"
 description: "Если элемент не хочет жить по правилам родителя, то его можно выровнять отдельно."
+baseline:
+  - group: flexbox
+    features:
+      - css.properties.align-self.flex_context
+      - css.properties.align-self.flex_context.baseline
+      - css.properties.align-self.flex_context.stretch
+  - group: grid
+    features:
+      - css.properties.align-self.grid_context
 authors:
   - solarrust
 editors:
@@ -34,7 +43,7 @@ tags:
 }
 ```
 
-## Как это понять
+## Как понять
 
 Иногда требуется все флекс-элементы выровнять по вертикальной оси одним образом, но один или несколько из них выровнять иначе.
 

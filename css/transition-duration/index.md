@@ -1,10 +1,12 @@
 ---
 title: "`transition-duration`"
+description: "За какое время элемент изменится?"
 authors:
   - ezhkov
-keywords:
-  - transition-duration
-  - transition
+related:
+  - css/transition
+  - css/animation-duration
+  - css/transition-timing-function
 tags:
   - doka
 ---
@@ -58,7 +60,7 @@ tags:
 }
 ```
 
-## Как это понять
+## Как понять
 
 Браузер анимирует изменения свойств при выполнении двух условий:
 

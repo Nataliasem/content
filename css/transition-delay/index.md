@@ -1,11 +1,16 @@
 ---
 title: "`transition-delay`"
+description: "Откладываем изменение элемента на некоторое время."
 authors:
   - ezhkov
 contributors:
   - skorobaeus
 keywords:
   - задержка
+related:
+  - css/transition
+  - css/transition-timing-function
+  - css/will-change
 tags:
   - doka
 ---
@@ -37,17 +42,7 @@ tags:
 }
 ```
 
-Глобальные значения:
-
-```css
-.selector {
-  transition-delay: inherit;
-  transition-delay: initial;
-  transition-delay: unset;
-}
-```
-
-## Как это понять
+## Как понять
 
 Синтаксически свойство полностью аналогично [`transition-duration`](/css/transition-duration/), но использование их вместе помогает достичь интересных эффектов. Например, создать цепочку последовательных изменений свойств:
 

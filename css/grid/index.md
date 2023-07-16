@@ -1,11 +1,18 @@
 ---
 title: "`grid`"
+description: "Короткий способ указать значения для большинства свойств гридов."
+baseline:
+  - group: grid
+    features:
+      - css.properties.grid
 authors:
   - solarrust
 editors:
   - tachisis
-keywords:
-  - шорткат
+related:
+  - css/grid-template
+  - css/grid-auto-flow
+  - css/grid-guide
 tags:
   - doka
 ---
@@ -14,12 +21,12 @@ tags:
 
 Мегашорткат, позволяющий задать значения всему и сразу. А конкретно с его помощью можно указать значения для следующих свойств:
 
-- [`grid-template-rows`](/css/grid-template-rows/)
-- [`grid-template-columns`](/css/grid-template-columns/)
-- [`grid-template-areas`](/css/grid-template-areas/)
-- [`grid-auto-rows`](/css/grid-auto-columns-rows/)
-- [`grid-auto-columns`](/css/grid-auto-columns-rows/)
-- [`grid-auto-flow`](/css/grid-auto-flow/)
+- [`grid-template-rows`](/css/grid-template-rows/);
+- [`grid-template-columns`](/css/grid-template-columns/);
+- [`grid-template-areas`](/css/grid-template-areas/);
+- [`grid-auto-rows`](/css/grid-auto-columns-rows/);
+- [`grid-auto-columns`](/css/grid-auto-columns-rows/);
+- [`grid-auto-flow`](/css/grid-auto-flow/).
 
 ## Пример
 
@@ -70,8 +77,8 @@ tags:
 .container {
   display: grid;
   grid:
-    [row1-start] 25px [row1-end row2-start] 25px [row2-end] /
-    auto 50px auto;
+    [row1-start] 25px [row1-end row2-start] 25px [row2-end]
+    / auto 50px auto;
 }
 ```
 
@@ -123,7 +130,7 @@ tags:
 
 ## Подсказки
 
-💡 Перед тем как соблазниться возможностью расписать всё в одном свойстве, дважды (а то и трижды) подумайте о читабельности кода. Учтите и то, что гриды относительно новая и не такая уж простая технология. Не каждый коллега сможет прочесть этот шорткат.
+💡 Перед тем как соблазниться возможностью расписать всё в одном свойстве, дважды (а то и трижды) подумайте о читабельности кода. Учтите и то, что гриды не такая уж простая технология. Не каждый коллега сможет прочесть этот шорткат.
 
 <aside>
 

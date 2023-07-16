@@ -1,7 +1,12 @@
 ---
 title: "Настройка сайта для поисковиков и скринридеров"
+description: "Кто кроме пользователей может читать и использовать сайт."
 authors:
   - igsekor
+related:
+  - tools/web-app-types
+  - js/deal-with-forms
+  - tools/web-security
 tags:
   - article
 ---

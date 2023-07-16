@@ -26,7 +26,7 @@ tags:
 
 ```js
 // получаем элемент из DOM
-const element = document.getElementsByTagName('h1')
+const element = document.getElementsByTagName('h1')[0]
 
 // после выполнения этого кода h1 будет выравнивать текст по центру
 element.align = 'center'
@@ -34,7 +34,7 @@ element.align = 'center'
 element.style.color = 'red'
 ```
 
-## Как это понять
+## Как понять
 
 HTML-элементы содержат свойства, которые можно разделить на группы:
 
